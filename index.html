@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio websites</title>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/60922564bf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fraunces:wght@700&family=Montserrat:wght@500;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="index.css" />
+    <script src="tabs.js" defer></script>
+    <script src="scroll.js" defer></script>
+    <script src="sidebar.js" defer></script>
+
+     <!-- favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+     <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <section class="bg-dark-blue">
+      <header class="flex nav-bar">
+        <div class="logo">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+        <div>
+          <button class="sidebar-toggle">
+            <svg class="hamburger" viewBox="0 0 100 100" width="60">
+              <rect
+                class="line top"
+                width="90"
+                height="6"
+                x="10"
+                y="25"
+                rx="5"
+              ></rect>
+              <rect
+                class="line middle"
+                width="70"
+                height="6"
+                x="10"
+                y="45"
+                rx="5"
+              ></rect>
+            </svg>
+          </button>
+
+          <!-- sidebar -->
+          <aside class="sidebar bg-light-brown">
+            <div class="sidebar-header">
+              <button class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <ul class="links">
+              <li>
+                <a href="#project" class="capitalized scroll-link">portfolio</a>
+              </li>
+              <li>
+                <a href="#playground" class="capitalized scroll-link"
+                  >Playground</a
+                >
+              </li>
+              <li>
+                <a href="#about-me" class="capitalized scroll-link">about me</a>
+              </li>
+            </ul>
+            <h1 class="text-grey uppercase letter-spacing-1 fs-400 say-hello">
+              say hello
+            </h1>
+            <a href="mailto:jayasetiawan28@gmail.com" class="d-block text-dark-blue">
+              jayasetiawan28@gmail.com</a
+            >
+            <a
+              href="#https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+              class="d-block text-dark-blue"
+              >linkedin</a
+            >
+          </aside>
+        </div>
+      </header>
+    </section>
+    <section id="main" class="grid-container grid-container--home bg-dark-blue">
+      <div class="left-img">
+        <div class="img-wrapper-profile">
+          <img class="d-block" src="assets/bio-min.JPG" alt=" potrait-img" />
+        </div>
+      </div>
+      <div class="right-article">
+        <h1 class="ff-serif">Hi, I am Jaya</h1>
+        <h2 class="text-green fs-800">Frontend Developer.</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi libero
+          eligendi at aliquam nam necessitatibus debitis? Obcaecati, aperiam
+          itaque tempore quas vero neque consequuntur aliquid quod laborum
+          nulla? Sed neque tenetur quae fugiat voluptatibus itaque magni? Porro
+          dolore blanditiis ratione.
+        </p>
+        <br />
+        <img src="assets/line.svg" alt="" />
+        <img
+          class="Rectangle-2"
+          src="assets/basic shape/Rectangle-2.svg"
+          alt=""
+        />
+        <img class="ellipse" src="assets/basic shape/Ellipse.svg" alt="" />
+        <img class="Rectangle" src="assets/basic shape/Rectangle.svg" alt="" />
+        <img class="triangle" src="assets/basic shape/triangle.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section
+      id="project"
+      class="main grid-container grid-container--portfolio bg-light-brown flow"
+    >
+      <h1 class="text-grey numbered-title">
+        01
+        <span class="letter-spacing-1 uppercase text-grey-dark ff-serif"
+          >Project</span
+        >
+      </h1>
+
+      <picture id="core-img" class="img-wrapper">
+        <img src="assets/core-bnw.png" alt="core image" />
+      </picture>
+
+      <picture hidden id="ecommerce-img" class="img-wrapper">
+        <img src="assets/image-moon.png" alt="ecommerce image" />
+      </picture>
+
+      <picture hidden id="space-img" class="img-wrapper">
+        <img src="assets/image-titan.png" alt="" />
+      </picture>
+
+      <div
+        class="tab-list underline-indicators flex"
+        role="tablist"
+        id="project-tablist"
+      >
+        <button
+          aria-selected="true"
+          aria-controls="core-tab"
+          class="uppercase ff-serif fs-500 text-grey"
+          role="tab"
+          tabindex="0"
+          data-image="core-img"
+        >
+          1/3
+        </button>
+        <button
+          aria-selected="false"
+          aria-controls="ecommerce-tab"
+          class="uppercase ff-serif fs-500 text-grey"
+          role="tab"
+          tabindex="-1"
+          data-image="ecommerce-img"
+        >
+          2/3
+        </button>
+        <button
+          aria-selected="false"
+          aria-controls="space-tab"
+          class="uppercase ff-serif fs-500 text-grey"
+          role="tab"
+          tabindex="-1"
+          data-image="space-img"
+        >
+          3/3
+        </button>
+      </div>
+      <!-- core -->
+      <article
+        class="flow portfolio-info"
+        id="core-tab"
+        tabindex="0"
+        role="tabpanel"
+      >
+        <h2 class="text-grey-dark uppercase ff-serif fs-600 letter-spacing-1">
+          core
+        </h2>
+        <p class="text-grey">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil amet
+          dolores quibusdam neque repellendus nesciunt commodi sunt, enim harum
+          officia, dignissimos, velit beatae! Non, quam? Dolore sint cum
+          voluptatem quisquam blanditiis, quibusdam pariatur accusantium veniam
+          eaque temporibus beatae culpa officia repudiandae accusamus excepturi!
+          Impedit nisi dignissimos et. Enim velit molestias soluta tempora
+          accusantium optio ullam nemo consequatur eos? Ad, id!
+        </p>
+        <div class="flex">
+          <div class="button-wrapper flex">
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >live</a
+            >
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >github</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <!-- ecommerce -->
+      <article
+        hidden
+        class="flow portfolio-info"
+        id="ecommerce-tab"
+        tabindex="0"
+        role="tabpanel"
+      >
+        <h2 class="text-grey-dark uppercase ff-serif fs-600 letter-spacing-1">
+          ecommerce
+        </h2>
+        <p class="text-grey">
+          this is ecommerce pageLorem ipsum dolor sit amet consectetur
+          adipisicing elit. Maiores consectetur odit distinctio deserunt
+          voluptatibus laboriosam, fugiat cumque totam quisquam ad natus
+          eligendi adipisci atque, architecto harum molestias facere odio
+          corporis.
+        </p>
+        <div class="flex">
+          <div class="button-wrapper flex">
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >live</a
+            >
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >github</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <!-- space -->
+      <article
+        hidden
+        class="flow portfolio-info"
+        id="space-tab"
+        tabindex="-1"
+        role="tabpanel"
+      >
+        <h2 class="text-grey-dark uppercase ff-serif fs-600 letter-spacing-1">
+          space
+        </h2>
+        <p class="text-grey">
+          This is SPACE Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Nihil amet dolores quibusdam neque repellendus nesciunt commodi
+          sunt, enim harum officia, dignissimos, velit beatae! Non, quam? Dolore
+          sint cum voluptatem quisquam blanditiis, quibusdam pariatur
+          accusantium veniam eaque temporibus beatae culpa officia repudiandae
+          accusamus excepturi! Impedit nisi dignissimos et. Enim velit molestias
+          soluta tempora accusantium optio ullam nemo consequatur eos? Ad, id!
+        </p>
+        <div class="flex">
+          <div class="button-wrapper flex">
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >live</a
+            >
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >github</a
+            >
+          </div>
+        </div>
+      </article>
+      <img
+        class="ellipse-linear-1"
+        src="assets/basic shape/Ellipse-linear.svg"
+        alt=""
+      />
+      <img
+        class="ellipse-linear-2"
+        src="assets/basic shape/Ellipse-linear.svg"
+        alt=""
+      />
+      <img
+        class="ellipse-linear-3"
+        src="assets/basic shape/Ellipse-linear.svg"
+        alt=""
+      />
+      <img
+        class="ellipse-linear-4"
+        src="assets/basic shape/Ellipse-linear.svg"
+        alt=""
+      />
+    </section>
+
+    <!-- playground section -->
+    <section
+      id="playground"
+      class="main grid-container grid-container--portfolio bg-green flow"
+    >
+      <h1 class="text-grey numbered-title">
+        02
+        <span class="letter-spacing-1 uppercase text-grey-dark ff-serif"
+          >playground</span
+        >
+      </h1>
+
+      <picture id="playground-img-1">
+        <img
+          src="assets/image-europa.png"
+          alt="core image"
+          class="img-wrapper"
+        />
+      </picture>
+
+      <picture hidden id="playground-img-2">
+        <img
+          src="assets/image-moon.png"
+          alt="ecommerce image"
+          class="img-wrapper"
+        />
+      </picture>
+
+      <picture hidden id="playground-img-3">
+        <img src="assets/image-titan.png" alt="" class="img-wrapper" />
+      </picture>
+
+      <!-- tab-list -->
+      <div
+        class="tab-list underline-indicators flex"
+        role="tablist"
+        id="playground-tablist"
+      >
+        <button
+          aria-selected="true"
+          aria-controls="playground-1-tab"
+          class="uppercase ff-serif fs-500 text-grey"
+          role="tab"
+          tabindex="0"
+          data-image="playground-img-1"
+        >
+          1/3
+        </button>
+        <button
+          aria-selected="false"
+          aria-controls="playground-2-tab"
+          class="uppercase ff-serif fs-500 text-grey"
+          role="tab"
+          tabindex="-1"
+          data-image="playground-img-2"
+        >
+          2/3
+        </button>
+        <button
+          aria-selected="false"
+          aria-controls="playground-3-tab"
+          class="uppercase ff-serif fs-500 text-grey"
+          role="tab"
+          tabindex="-1"
+          data-image="playground-img-3"
+        >
+          3/3
+        </button>
+      </div>
+      <!-- core -->
+      <article
+        class="flow portfolio-info"
+        id="playground-1-tab"
+        tabindex="0"
+        role="tabpanel"
+      >
+        <h2 class="text-grey-dark uppercase ff-serif fs-600 letter-spacing-1">
+          core
+        </h2>
+        <p class="text-grey">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil amet
+          dolores quibusdam neque repellendus nesciunt commodi sunt, enim harum
+          officia, dignissimos, velit beatae! Non, quam? Dolore sint cum
+          voluptatem quisquam blanditiis, quibusdam pariatur accusantium veniam
+          eaque temporibus beatae culpa officia repudiandae accusamus excepturi!
+          Impedit nisi dignissimos et. Enim velit molestias soluta tempora
+          accusantium optio ullam nemo consequatur eos? Ad, id!
+        </p>
+        <div class="flex">
+          <div class="button-wrapper flex">
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >live</a
+            >
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >github</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <!-- ecommerce -->
+      <article
+        hidden
+        class="flow portfolio-info"
+        id="playground-2-tab"
+        tabindex="-1"
+        role="tabpanel"
+      >
+        <h2 class="text-grey-dark uppercase ff-serif fs-600 letter-spacing-1">
+          ecommerce
+        </h2>
+        <p class="text-grey">
+          this is ecommerce pageLorem ipsum dolor sit amet consectetur
+          adipisicing elit. Maiores consectetur odit distinctio deserunt
+          voluptatibus laboriosam, fugiat cumque totam quisquam ad natus
+          eligendi adipisci atque, architecto harum molestias facere odio
+          corporis.
+        </p>
+        <div class="flex">
+          <div class="button-wrapper flex">
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >live</a
+            >
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >github</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <!-- space -->
+      <article
+        hidden
+        class="flow portfolio-info"
+        id="playground-3-tab"
+        tabindex="-1"
+        role="tabpanel"
+      >
+        <h2 class="text-grey-dark uppercase ff-serif fs-600 letter-spacing-1">
+          space
+        </h2>
+        <p class="text-grey">
+          This is SPACE Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Nihil amet dolores quibusdam neque repellendus nesciunt commodi
+          sunt, enim harum officia, dignissimos, velit beatae! Non, quam? Dolore
+          sint cum voluptatem quisquam blanditiis, quibusdam pariatur
+          accusantium veniam eaque temporibus beatae culpa officia repudiandae
+          accusamus excepturi! Impedit nisi dignissimos et. Enim velit molestias
+          soluta tempora accusantium optio ullam nemo consequatur eos? Ad, id!
+        </p>
+        <div class="flex">
+          <div class="button-wrapper flex">
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >live</a
+            >
+            <a href="#" class="btn uppercase text-grey d-block ff-serif"
+              >github</a
+            >
+          </div>
+        </div>
+      </article>
+      <img
+        class="triangle-linear-1"
+        src="assets/basic shape/triangle-linear.svg"
+        alt=""
+      />
+      <img
+        class="triangle-linear-2"
+        src="assets/basic shape/triangle-linear.svg"
+        alt=""
+      />
+      <img
+        class="triangle-linear-3"
+        src="assets/basic shape/triangle-linear.svg"
+        alt=""
+      />
+      <img
+        class="triangle-linear-4"
+        src="assets/basic shape/triangle-linear.svg"
+        alt=""
+      />
+    </section>
+    <!-- About me section  -->
+    <section id="about-me" class="main bg-light-pink about-me-section flow">
+      <h1 class="text-grey numbered-title">
+        03
+        <span class="letter-spacing-1 uppercase text-grey-dark ff-serif"
+          >about me</span
+        >
+      </h1>
+      <article>
+        <p class="text-grey about-content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+          facilis non modi est assumenda vel officia sapiente unde dignissimos
+          repellendus ducimus, placeat fugiat quisquam at adipisci nobis
+          deleniti natus voluptatum. Corrupti laborum minima fugiat impedit
+          facilis iure suscipit aliquam hic illo! Ipsa minus facere, voluptate
+          rem quisquam facilis.
+        </p>
+        <p class="text-grey about-content">
+          Asperiores id est eius quae vel corrupti repellat dolor aperiam nemo
+          itaque, aliquid inventore rem. Exercitationem sequi facere ipsam. Est
+          quam sapiente distinctio consectetur id dignissimos consequatur!
+          Necessitatibus exercitationem, quod laudantium autem vitae iure
+          nostrum quia maiores dolorem at pariatur commodi a vel quas tenetur
+          asperiores eius cupiditate aperiam quaerat explicabo vero?
+        </p>
+      </article>
+      <a href="mailto:jayasetiawan28@gmail.com" class="btn uppercase text-grey d-block ff-serif"
+        >get in touch</a
+      >
+      <img
+        class="rectangular-linear-1"
+        src="assets/basic shape/Rectangle-linear.svg"
+        alt=""
+      />
+      <img
+        class="rectangular-linear-2"
+        src="assets/basic shape/Rectangle-linear.svg"
+        alt=""
+      />
+      <img
+        class="rectangular-linear-3"
+        src="assets/basic shape/Rectangle-linear.svg"
+        alt=""
+      />
+      <img
+        class="rectangular-linear-4"
+        src="assets/basic shape/Rectangle-linear.svg"
+        alt=""
+      />
+    </section>
+    <section class="copyright bg-dark-blue">
+      <p>&copy Jaya Setiawan <span id="date"></span></p>
+    </section>
+  </body>
+</html>
