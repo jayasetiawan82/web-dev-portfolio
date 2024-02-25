@@ -574,7 +574,7 @@ aside a {
 .triangle {
   position: absolute;
   bottom: 3em;
-  left: 9em;
+  left: 6em;
   width: 7em;
 }
 
@@ -602,9 +602,9 @@ aside a {
 }
 
 .ellipse-linear-4 {
-  width: 20em;
+  width: 8em;
   position: absolute;
-  right: -6em;
+  right: 8em;
   bottom: 1em;
 }
 
@@ -622,7 +622,7 @@ aside a {
   width: 10em;
   top: 2em;
   position: absolute;
-  right: 5em;
+  right: 3em;
   transform: rotate(80deg);
 }
 
