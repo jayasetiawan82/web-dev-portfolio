@@ -397,6 +397,7 @@ header {
   grid-area: content;
 }
 
+
 @media (min-width: 45em) {
   .img-wrapper {
     margin-left: 3em;
@@ -471,6 +472,12 @@ header {
   padding: 0.2em 0.5em;
   border-radius: 5px;
   width: fit-content;
+}
+
+.btn:hover {
+ background-color: var(--clr-font-white);
+ color: var(--clr-font-dark-grey);
+ border: none;
 }
 
 @media (max-width: 45em) {
@@ -548,14 +555,14 @@ aside a {
   position: absolute;
   bottom: 10%;
   right: 10%;
-  width: 3em;
+  width: 2em;
 }
 
 .ellipse {
   position: absolute;
   top: 10em;
   right: 5em;
-  width: 3em;
+  width: 5em;
 }
 
 .Rectangle {
@@ -568,7 +575,7 @@ aside a {
   position: absolute;
   bottom: 3em;
   left: 9em;
-  width: 4em;
+  width: 7em;
 }
 
 /* ellipse for project page */
@@ -595,11 +602,12 @@ aside a {
 }
 
 .ellipse-linear-4 {
-  width: 6em;
+  width: 20em;
   position: absolute;
-  right: 7em;
-  bottom: 6em;
+  right: -6em;
+  bottom: 1em;
 }
+
 
 /* triangle for playground section */
 .triangle-linear-1 {
@@ -611,15 +619,15 @@ aside a {
 }
 
 .triangle-linear-2 {
-  width: 6em;
-  top: 5em;
+  width: 10em;
+  top: 2em;
   position: absolute;
-  right: 7em;
-  transform: rotate(50deg);
+  right: 5em;
+  transform: rotate(80deg);
 }
 
 .triangle-linear-3 {
-  width: 8em;
+  width: 3em;
   bottom: 5em;
   position: absolute;
   left: 7em;
